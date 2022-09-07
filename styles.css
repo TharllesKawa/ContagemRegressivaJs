@@ -1,0 +1,130 @@
+:root {
+    --escuro--: #131f2a;
+    --escuro2--: #123a41;
+    --escuro3--: #12545f;
+    --escuro4--: #148184;
+    --escuro5--: #1ab3ae;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    font-family: "Poppins", sans-serif;
+    background-color: var(--escuro--);
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.data h1 {
+    margin-bottom: 25px;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.form-main label {
+    font-size: 2.5rem;
+    padding-right: 20px;
+    color: var(--escuro5--);
+}
+
+.form-main input {
+    text-align: center;
+    font-size: 2rem;
+    width: 250px;
+}
+
+.container-1 {
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--escuro3--);
+}
+
+.temp {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.temp span {
+    text-align: center;
+    font-size: 50px;
+}
+
+.temp li {
+    text-align: center;
+    font-size: 40px;
+}
+
+.seconds, .minutes, .hours, .days {
+    max-width: 200px;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--escuro4--);
+}
+
+
+@media screen and (max-width: 768px) {
+    .data h1 {
+        margin-bottom: 25px;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .container-1 {
+        width: 90%;
+    }
+
+    .form-main {
+        text-align: center;
+        width: 80%;
+    }
+
+    .seconds, .minutes, .hours, .days  {
+        width: 90%;
+    }
+
+    body {
+        display: block;
+    }
+}
